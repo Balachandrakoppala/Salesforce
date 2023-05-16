@@ -7,6 +7,7 @@ trigger UpdatePhoneOnAccount on Contact (After Update){
             }
             
     }
+    // fetech the related data 
     list<Account>acclist=[select id,phone from Account where id in:conmap.keySet()];
         for(Account ac:acclist){
             if(conmap.containsKey(ac.Id)){
