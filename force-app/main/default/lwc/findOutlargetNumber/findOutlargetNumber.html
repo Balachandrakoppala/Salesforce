@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="LagestNumber">
+        <div>
+        <lightning-input label="FirstNumber" type="Number" value="IntPut1" onchange={FirstNumber}></lightning-input>
+        <lightning-input label="SecondNumber" type="Number" value="IntPut2" onchange={SecondNumber}></lightning-input>
+        <lightning-input label="ThirdNumber" type="Number" value="IntPut3" onchange={ThirdNumber}></lightning-input>
+        </div>
+        <div>
+            <lightning-button label="Result" onclik={submit}></lightning-button>
+            <lightning-button label="Reset" onclik={Reset}></lightning-button>
+
+        </div>
+    </lightning-card>
+</template>
